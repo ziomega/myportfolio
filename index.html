@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio-Evaan Antony Philip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container"> 
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img class="menu2" src="cross.svg" alt="cross" onclick="closemenu()">
+            </ul>
+            <img class="menu" 
+            src="menu.jpg"alt="menu" onclick="openmenu()">.
+        </nav>
+        <div class="header-text">
+            <h1>Hey, I am <span>Evaan Antony Philip</span></h1> <br>
+            
+            <p>Student, <a href="http://www.mec.ac.in/" target="_blank">Model Engineering College, Thrikkakara</a></p>
+            
+
+        </div>
+
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <img src="profile.jpg" alt="pic">
+            </div>
+            <div class="about-col-2">
+             <h1 class="subtitle">About Me </h1>
+             <p class="myself">
+                Hello, I'm Evaan Antony Philip, born on July 23, 2005 at Ernakulam, Kerala. <br>
+                I embarked on my educational journey at Campion School Edappally, where I laid the foundation for my academic pursuits. <br>
+                Currently, I am pursuing my undergraduate studies at Model Engineering College, Thrikkakara. My passion for learning and a desire to make a positive impact on the world drive my academic and personal endeavors. I look forward to exploring new horizons and contributing to the greater good through my education and experiences.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active link" onclick="opentab('Education')"> Education</p>
+                    <p class="tab-links" onclick="opentab('Skills')"> Additional Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                </div> 
+                <div class="tab-contents active-tab" id="Education">
+                   <ul>
+                    <li><span>Higher Secondary Education</span><br>Campion School, Edappally. (2009-2023)</li>
+                    <li><span>Btech in Computer Science Engineering</span><br>Model Engineering College, Thrikkakara. (2023-2027)</li>
+                   </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Creative Writing</span><br>Writes shorts stories and fanfiction in my free time.</li>
+                        <li><span>Website Development</span><br>Still a newbie at this, hoping to change that soon.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>As of now, nothing yet</span><br>But Hoping to fill this one soon enough :) </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobby-list">
+            <div class="hobby">
+                <img src="hobby1.jpg" alt="reading">
+                <div class="layer">
+                    <h3>Reading</h3>
+                    <p>One of my favourite pastimes. Huge fan of genres like Mystery, Thrillers and Fantasy.</p>
+                      <a class="PJO" href="http://rickriordan.com/series/percy-jackson-and-the-olympians/" target="_blank">My Favourite Book Series.</a>
+                      
+                </div>
+    
+            </div>
+            <div class="hobby">
+                <img src="hobby2.jpg" alt="football">
+                <div class="layer">
+                    <h3>Football</h3>
+                    <p>My favourite sport to both watch and play with my friends.</p>
+                      <a class="spurs" href="https://www.tottenhamhotspur.com/" target="_blank">My Favourite Football Team.</a>
+                      
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="hobby3.jpg" alt="coding">
+                <div class="layer">
+                    <h3>Coding</h3>
+                    <p>One of my newfound interest. Hope to learn more about this amazing world!! </p>  
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="mail"><img src="mail.png" alt="">  <a href="mailto:sanguphilip003@gmail.com" class="mailink" target="_blank"> sanguphilip003@gmail.com</a> </p>
+                <p class="phone"><img src="phone.png" alt=""><a href="tel:+91 9539767961" class="phonelink" target="_blank">  +91 9539767961</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/evaan-antony-philip-b90421291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img id="linkedin" src="linkedin.webp"></a>
+                    <a href="https://instagram.com/zi_evaan?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img id="insta" src="insta.webp"></a>
+                    <a href="https://twitter.com/zi_omega" target="_blank"><img id="twitter" src="twitter.webp"></a>
+                    <a href="https://www.facebook.com/zi.omega.39/" target="_blank"><img id="facebook" src="facebook.png"></a>
+                    <a href="https://github.com/ziomega" target="_blank"><img id="github" src="github.png"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <marquee behavior="alternate" direction="right">Made this by watching a random guy on youtube lol  <img src="emoji.png" alt="">  :)</marquee>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzG7Ll382i-aEqL6h6Eit0FGWevaIpiZnSJm6qsR-NUpjkAJgGZxxrj9NEIxzkSk8Y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
